@@ -37,7 +37,7 @@ CSMB2Directory::~CSMB2Directory(void)
 
 bool CSMB2Directory::GetDirectory(const CURL& url, CFileItemList &items)
 {
-  assert(url.IsProtocol("smb"));
+  //assert(url.IsProtocol("smb"));
   if (!strlen(url.GetShareName().c_str()))
     return false;
 

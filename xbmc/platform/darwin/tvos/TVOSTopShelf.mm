@@ -92,9 +92,9 @@ void CTVOSTopShelf::SetTopShelfItems(CFileItemList& moviesRA, CFileItemList& tvR
   NSMutableArray * tvArrayPR = [[NSMutableArray alloc] init];
   NSString* groupid;
   if (CLiteUtils::IsLite())
-    groupid = [NSString stringWithUTF8String:"group.tv.mrmc.lite.shared"];
+    groupid = [NSString stringWithUTF8String:"group.net.briankendall.mrmc"];
   else
-    groupid = [NSString stringWithUTF8String:"group.tv.mrmc.shared"];
+    groupid = [NSString stringWithUTF8String:"group.net.briankendall.mrmc"];
   NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:groupid];
   
   NSFileManager* fileManager = [NSFileManager defaultManager];

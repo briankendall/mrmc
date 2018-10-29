@@ -49,10 +49,10 @@
 - (NSArray *)topShelfItems
 {
 #if defined(APP_PACKAGE_LITE)
-      NSString* groupid = [NSString stringWithUTF8String:"group.tv.mrmc.lite.shared"];
+      NSString* groupid = [NSString stringWithUTF8String:"group.net.briankendall.mrmc"];
       NSString* groupURL = [NSString stringWithUTF8String:"mrmclite"];
 #else
-      NSString* groupid = [NSString stringWithUTF8String:"group.tv.mrmc.shared"];
+      NSString* groupid = [NSString stringWithUTF8String:"group.net.briankendall.mrmc"];
       NSString* groupURL = [NSString stringWithUTF8String:"mrmc"];
 #endif
     NSLog(@"TopShelf ID: %@", groupid);
