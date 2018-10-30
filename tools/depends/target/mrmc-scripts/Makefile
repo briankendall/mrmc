@@ -10,6 +10,7 @@ SUBDIRS += script.xbmc.unpausejumpback
 SUBDIRS += service.libraryautoupdate
 SUBDIRS += service.libraryautoupdate
 SUBDIRS += plugin.video.youtube
+SUBDIRS += script.module.six
 
 all: scripts
 

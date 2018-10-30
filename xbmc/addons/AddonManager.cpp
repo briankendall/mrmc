@@ -203,6 +203,7 @@ static constexpr const char* systemAddonWhiteList[] = {
   "screensaver.xbmc.builtin.slideshow",
   "screensaver.xbmc.builtin.system",
   "script.module.requests",
+  "script.module.six",
   "skin.ariana",
   "skin.amber",
   "skin.blackglassnova",
