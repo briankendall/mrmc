@@ -14,14 +14,14 @@ CLEAN_FILES=$(ARCHIVE) $(PLATFORM)
 all: .installed-$(PLATFORM)
 
 # https://github.com/jdf76/plugin.video.youtube/archive/6.2.0.tar.gz
-	
-$(TARBALLS_LOCATION)/$(ARCHIVE):
-	$(RETRIEVE_TOOL) $(RETRIEVE_TOOL_FLAGS) $(BASE_URL)/$(REALARCHIVE)
-	mv -f $(REALARCHIVE) $(TARBALLS_LOCATION)/$(ARCHIVE)
 
-$(PLATFORM): $(TARBALLS_LOCATION)/$(ARCHIVE) $(DEPS)
+# $(TARBALLS_LOCATION)/$(ARCHIVE):
+# 	$(RETRIEVE_TOOL) $(RETRIEVE_TOOL_FLAGS) $(BASE_URL)/$(REALARCHIVE)
+# 	mv -f $(REALARCHIVE) $(TARBALLS_LOCATION)/$(ARCHIVE)
+
+$(PLATFORM): $(DEPS) $(shell find src -type f)
 	rm -rf $(PLATFORM); mkdir -p $(PLATFORM)
-	cd $(PLATFORM); $(ARCHIVE_TOOL) $(ARCHIVE_TOOL_FLAGS) $(TARBALLS_LOCATION)/$(ARCHIVE)
+	cp -rf src/ $(PLATFORM)
 
 .installed-$(PLATFORM): $(PLATFORM)
 	rm -rf $(PREFIX)/mrmc/addons/$(LIBNAME)
