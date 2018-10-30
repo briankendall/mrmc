@@ -8,6 +8,8 @@ SUBDIRS += script.keymap
 SUBDIRS += script.module.requests
 SUBDIRS += script.xbmc.unpausejumpback
 SUBDIRS += service.libraryautoupdate
+SUBDIRS += service.libraryautoupdate
+SUBDIRS += plugin.video.youtube
 
 all: scripts
 

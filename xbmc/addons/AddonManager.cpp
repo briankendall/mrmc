@@ -236,6 +236,7 @@ static constexpr const char* extendedAddonWhiteList[] = {
   "script.xbmc.unpausejumpback",
   "service.libraryautoupdate",
   "skin.titan",
+  "plugin.video.youtube",
 };
 
 cp_log_severity_t clog_to_cp(int lvl);
